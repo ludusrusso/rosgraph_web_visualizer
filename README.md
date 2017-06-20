@@ -12,4 +12,4 @@ $ npm install
 $ npm run electron
 ```
 
-Check that the IP in `index.ts` match your rosbridge server.
+Check that the IP in `index.ts` matches your rosbridge server.
