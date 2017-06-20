@@ -5,7 +5,7 @@ on roslibjs ans RosBridge.
 
 ![](img.png)
 
-## Usage
+## Usage
 
 ```bash
 $ npm install
