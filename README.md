@@ -1,4 +1,4 @@
-# RosLibJS Graph
+# RosGraph Web Visualizer
 
 This is an electron and web tootls to automatically draw the ROS Graph resorting
 on roslibjs ans RosBridge.
@@ -20,6 +20,9 @@ Check that the IP in `index.ts` matches your rosbridge server.
  - Run robsbridge server on your ros environment
  - Set the IP (with full address) from the UI
  - Done
+
+## Demo
+ - https://www.youtube.com/watch?v=2rp3OgjBJS8
 
 ## Contributors
 
