@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="input-group">
+            <input type="text" class="form-control" id="input_ip" placeholder="ws://192.168.33.10:9090">
+            <span class="input-group-btn">
+              <button id="connect_btn" class="btn btn-secondary" type="button">Go!</button>
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+            <div id="mynetwork"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    require('./index.ts');
+  </script>
+
+</html>
