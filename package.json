@@ -2,20 +2,55 @@
   "name": "roslibjs_graph",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "src/main.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron main.ts"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "author": "Ludovico O. Russo",
   "license": "GPL-3.0",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "electron-compile": "^6.4.1",
     "roslib": "git+https://github.com/RobotWebTools/roslibjs.git#develop",
     "vis": "^4.20.0"
   },
   "devDependencies": {
-    "electron-prebuilt-compile": "^1.6.11",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-react": "^6.24.1",
+    "electron-prebuilt-compile": "1.6.11",
     "typescript": "^2.3.4"
+  },
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {},
+      "electronWinstallerConfig": {
+        "name": ""
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": ""
+      }
+    }
   }
 }

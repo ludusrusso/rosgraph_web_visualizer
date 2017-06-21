@@ -1,1 +1,4 @@
 node_modules/
+out/
+*.DS_Store
+package-lock.json
