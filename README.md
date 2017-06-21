@@ -13,3 +13,7 @@ $ npm run electron
 ```
 
 Check that the IP in `index.ts` matches your rosbridge server.
+
+## Contributors
+
+[Ludovico O. Russo](http://github.com/ludusrusso)
